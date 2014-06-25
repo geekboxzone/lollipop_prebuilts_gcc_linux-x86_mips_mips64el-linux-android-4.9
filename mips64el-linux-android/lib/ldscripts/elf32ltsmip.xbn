@@ -8,7 +8,8 @@ SECTIONS
   /* Read-only sections, merged into text segment: */
   PROVIDE (__executable_start = 0x80000); . = 0x80000 + SIZEOF_HEADERS;
   .interp         : { *(.interp) }
-  .reginfo        : { *(.reginfo) }
+  .MIPS.abiflags   : { *(.MIPS.abiflags) }
+  .reginfo         : { *(.reginfo) }
   .note.gnu.build-id : { *(.note.gnu.build-id) }
   .hash           : { *(.hash) }
   .gnu.hash       : { *(.gnu.hash) }

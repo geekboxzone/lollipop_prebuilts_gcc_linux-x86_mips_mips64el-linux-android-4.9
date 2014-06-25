@@ -9,6 +9,7 @@ SECTIONS
   /* Read-only sections, merged into text segment: */
   PROVIDE (__executable_start = 0x10000000); . = 0x10000000 + SIZEOF_HEADERS;
   .interp         : { *(.interp) }
+  .MIPS.abiflags        : { *(.MIPS.abiflags) }
   .reginfo        : { *(.reginfo) }
   .note.gnu.build-id : { *(.note.gnu.build-id) }
   .dynamic        : { *(.dynamic) }

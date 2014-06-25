@@ -10,6 +10,7 @@ SECTIONS
 {
   /* Read-only sections, merged into text segment: */
   .interp       0 : { *(.interp) }
+  .MIPS.abiflags      0 : { *(.MIPS.abiflags) }
   .reginfo      0 : { *(.reginfo) }
   .note.gnu.build-id : { *(.note.gnu.build-id) }
   .dynamic      0 : { *(.dynamic) }

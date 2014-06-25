@@ -7,6 +7,7 @@ SECTIONS
 {
   /* Read-only sections, merged into text segment: */
   . = 0 + SIZEOF_HEADERS;
+  .MIPS.abiflags        : { *(.MIPS.abiflags) }
   .MIPS.options : { *(.MIPS.options) }
   .note.gnu.build-id : { *(.note.gnu.build-id) }
   .dynamic        : { *(.dynamic) }

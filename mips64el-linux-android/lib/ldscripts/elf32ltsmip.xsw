@@ -7,7 +7,8 @@ SECTIONS
 {
   /* Read-only sections, merged into text segment: */
   . = 0 + SIZEOF_HEADERS;
-  .reginfo        : { *(.reginfo) }
+  .MIPS.abiflags   : { *(.MIPS.abiflags) }
+  .reginfo         : { *(.reginfo) }
   .note.gnu.build-id : { *(.note.gnu.build-id) }
   .hash           : { *(.hash) }
   .gnu.hash       : { *(.gnu.hash) }
